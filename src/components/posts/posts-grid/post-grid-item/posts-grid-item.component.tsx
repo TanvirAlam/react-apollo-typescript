@@ -1,5 +1,5 @@
 import React from 'react';
-import { Post } from '../../../common/interfaces/post.interface';
+import { Post } from '../../../../common/interfaces/post.interface';
 import './posts-grid-item.component.css';
 
 const PostsGridItem: React.FC<{ post: Post }> = ({ post } : { post: Post }) => {

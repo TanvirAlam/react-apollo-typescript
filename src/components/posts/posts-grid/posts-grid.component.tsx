@@ -1,5 +1,5 @@
 import React from 'react';
-import { Post } from '../../common/interfaces/post.interface';
+import { Post } from '../../../common/interfaces/post.interface';
 import PostsGridItem from './post-grid-item/posts-grid-item.component';
 import './posts-grid.component.css';
 

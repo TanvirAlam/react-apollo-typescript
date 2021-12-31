@@ -1,20 +1,14 @@
 import React from 'react';
-import { Post } from '../../common/interfaces/post.interface';
-import PostsGrid from '../../components/post-grid/posts-grid.component';
+import PostsGrid from '../../components/posts/posts-grid/posts-grid.component';
+import { useGetPost } from '../../hooks/posts/useGetPosts';
 import './home.page.css';
 
 const Home: React.FC = () => {
-    const posts: Post[] = [
-        {
-            id: "1",
-            title: "Title1",
-            body: "Body1",
-        }
-    ];
+    const posts = useGetPost();
 
     return (
         <div className="container">
-            <PostsGrid posts={ posts } />
+            <PostsGrid posts={ posts || [] } />
         </div>
     )
 }
